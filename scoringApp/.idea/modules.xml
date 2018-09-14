@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/scoringApp.iml" filepath="$PROJECT_DIR$/scoringApp.iml" />
+      <module fileurl="file://C:\Users\Geoff\Documents\GitHub\Android-Apps\scoringApp\scoringApp.iml" filepath="C:\Users\Geoff\Documents\GitHub\Android-Apps\scoringApp\scoringApp.iml" />
     </modules>
   </component>
 </project>
