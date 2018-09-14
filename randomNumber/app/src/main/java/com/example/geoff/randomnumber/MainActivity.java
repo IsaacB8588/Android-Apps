@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(strEntry)) {
             int rangeNumber = Integer.parseInt(value.getText().toString());
             Random rand = new Random();
-            int num = rand.nextInt(rangeNumber);
+            int num = rand.nextInt(rangeNumber+1);
 
             TextView result = findViewById(R.id.result);
             result.setText(String.valueOf(num));
