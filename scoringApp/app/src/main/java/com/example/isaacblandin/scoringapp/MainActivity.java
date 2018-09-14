@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         displayBlueScore(blueScore);
     }
 
-    public void setRedScore(View view){
+    public void redOneScore(View view){
         redScore ++;
         displayRedScore(redScore);
     }
