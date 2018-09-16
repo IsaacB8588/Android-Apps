@@ -8,10 +8,11 @@
 
     <TextView
         android:id="@+id/redScore"
-        android:layout_width="28dp"
-        android:layout_height="wrap_content"
+        android:layout_width="119dp"
+        android:layout_height="53dp"
         android:layout_marginTop="16dp"
         android:text="0"
+        android:textAlignment="center"
         android:textSize="50sp"
         app:layout_constraintEnd_toStartOf="@+id/blueScore"
         app:layout_constraintHorizontal_bias="0.5"
@@ -20,11 +21,12 @@
 
     <TextView
         android:id="@+id/blueScore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="127dp"
+        android:layout_height="54dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:text="0"
+        android:textAlignment="center"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
