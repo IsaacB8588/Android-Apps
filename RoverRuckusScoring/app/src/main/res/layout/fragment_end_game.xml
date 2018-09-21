@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.isaacblandin.roverruckusscoring.EndGameFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="End Game Score"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="80sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ToggleButton
+            android:id="@+id/partButton"
+            android:layout_width="340dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="24dp"
+            android:checked="false"
+            android:text="ToggleButton"
+            android:textOff="Not Partially Parked"
+            android:textOn="Partially Parked"
+            app:layout_constraintBottom_toTopOf="@+id/fullButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scoreText" />
+
+        <ToggleButton
+            android:id="@+id/fullButton"
+            android:layout_width="340dp"
+            android:layout_height="0dp"
+            android:text="ToggleButton"
+            android:textOff="Not Fully Parked"
+            android:textOn="Fully Parked"
+            app:layout_constraintBottom_toTopOf="@+id/hangButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/partButton" />
+
+        <ToggleButton
+            android:id="@+id/hangButton"
+            android:layout_width="340dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="32dp"
+            android:text="ToggleButton"
+            android:textOff="Not Hanging"
+            android:textOn="Hanging"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullButton" />
+
+        <Button
+            android:id="@+id/scoreSummary"
+            android:layout_width="162dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="8dp"
+            android:text="Score Summary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

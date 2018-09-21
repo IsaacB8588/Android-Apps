@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Rover Ruckus Scoring</string>
+    <string name="title_Autonomous">Autonomous</string>
+    <string name="title_teleop">TeleOp</string>
+    <string name="title_endgame">Endgame</string>
+    <string name="title_totals">Totals</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
