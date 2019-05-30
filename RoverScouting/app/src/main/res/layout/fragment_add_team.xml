@@ -1,0 +1,214 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.isaacblandin.roverscouting.AddTeamFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Team Name"
+            android:inputType="text"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editText"
+            app:layout_constraintEnd_toStartOf="@+id/button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editText" />
+
+        <ToggleButton
+            android:id="@+id/EndParked"
+            android:layout_width="300dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="16dp"
+            android:checked="false"
+            android:text="ToggleButton"
+            android:textOff="Not Parked"
+            android:textOn="Parked"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/Latched"
+            app:layout_constraintTop_toTopOf="@+id/Latched" />
+
+        <ToggleButton
+            android:id="@+id/Latched"
+            android:layout_width="300dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:checked="false"
+            android:text="ToggleButton"
+            android:textOff="Not Latched"
+            android:textOn="Latched"
+            app:layout_constraintEnd_toStartOf="@+id/EndParked"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/landMinerals" />
+
+        <Button
+            android:id="@+id/landAdd"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="+"
+            android:textSize="50sp"
+            app:layout_constraintStart_toEndOf="@+id/landMinerals"
+            app:layout_constraintTop_toTopOf="@+id/landMinerals" />
+
+        <TextView
+            android:id="@+id/totalAuto"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="80sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ToggleButton
+            android:id="@+id/landed"
+            android:layout_width="300dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="16dp"
+            android:checked="false"
+            android:text="ToggleButton"
+            android:textOff="Did Not Land"
+            android:textOn="Landed"
+            app:layout_constraintBottom_toBottomOf="@+id/sampled"
+            app:layout_constraintEnd_toStartOf="@+id/sampled"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/sampled"
+            android:layout_width="300dp"
+            android:layout_height="140dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp"
+            android:checked="false"
+            android:text="ToggleButton"
+            android:textOff="Did Not Sample"
+            android:textOn="Correctly Sampled"
+            app:layout_constraintBottom_toTopOf="@+id/teamMarker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/landed"
+            app:layout_constraintTop_toBottomOf="@+id/totalAuto" />
+
+        <ToggleButton
+            android:id="@+id/teamMarker"
+            android:layout_width="300dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="16dp"
+            android:checked="false"
+            android:text="ToggleButton"
+            android:textOff="Marker Not Scored"
+            android:textOn="Team marker Scored"
+            app:layout_constraintBaseline_toBaselineOf="@+id/parked"
+            app:layout_constraintEnd_toStartOf="@+id/parked"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/parked"
+            android:layout_width="300dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:checked="false"
+            android:text="ToggleButton"
+            android:textOff="Not Parked"
+            android:textOn="Parked"
+            app:layout_constraintBottom_toBottomOf="@+id/teamMarker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/teamMarker"
+            app:layout_constraintTop_toBottomOf="@+id/sampled" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="290dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:text="Score"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/totalAuto"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/landSub"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="-"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toStartOf="@+id/landMinerals"
+            app:layout_constraintTop_toTopOf="@+id/landMinerals" />
+
+        <TextView
+            android:id="@+id/landMinerals"
+            android:layout_width="300dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="8dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="70sp"
+            app:layout_constraintEnd_toEndOf="@+id/totalAuto"
+            app:layout_constraintStart_toStartOf="@+id/totalAuto"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Lander Minerals"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teamMarker" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Team Number"
+            android:inputType="number"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/editText2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Latched" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="107dp"
+            android:layout_height="66dp"
+            android:text="SEND"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editText2" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
